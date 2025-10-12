@@ -1,0 +1,78 @@
+# SitePilot - 只发布文档，不公开源代码
+
+# ==========================================
+# 排除所有源代码和构建文件
+# ==========================================
+
+# 源代码目录
+src/
+src-tauri/
+
+# 依赖和构建产物
+node_modules/
+dist/
+target/
+
+# 构建产物
+*.exe
+*.msi
+*.zip
+*.app
+*.dmg
+*.deb
+*.rpm
+*.AppImage
+
+# 数据库文件
+*.db
+*.db-shm
+*.db-wal
+
+# 配置文件
+package.json
+package-lock.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+.npmrc
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 脚本文件
+create-portable.ps1
+scripts/
+
+# 临时文件
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 只保留以下文档文件
+# ==========================================
+
+# 主要文档（使用 ! 表示不忽略）
+!README.md
+!README_RELEASE.md
+!TECHNICAL_DOCS.md
+!RELEASE_NOTES.md
+!DEPLOYMENT.md
+!GITHUB_RELEASE_FINAL.md
+!HOW_TO_RELEASE.md
+!RELEASE_CHECKLIST.md
+!FEATURES.md
+!CHANGELOG.md
+
+# 许可证
+!LICENSE
+
+# Git配置
+!.gitignore
+!.gitignore_release
+
