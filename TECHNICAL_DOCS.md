@@ -476,7 +476,7 @@ powershell -ExecutionPolicy Bypass -File create-portable.ps1
 如有技术问题，请通过以下方式联系：
 
 - **GitHub Issues：** https://github.com/CKEN-STAR/SitePilot/issues
-- **邮箱：** your-email@example.com
+- **邮箱：** peresbreedanay7156@gmail.com
 
 ---
 
