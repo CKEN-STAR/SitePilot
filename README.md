@@ -128,7 +128,7 @@ SitePilot 是一款专为 Windows 平台设计的桌面书签管理器，采用�
 如果您遇到任何问题或有功能建议：
 
 -  [提交Issue](https://github.com/CKEN-STAR/SitePilot/issues)
--  发送邮件至：your-email@example.com
+-  发送邮件至：peresbreedanay7156@gmail.com
 
 ---
 
