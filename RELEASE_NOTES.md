@@ -263,7 +263,7 @@
 如果您遇到任何问题或有功能建议：
 
 - **GitHub Issues：** [提交问题](https://github.com/CKEN-STAR/SitePilot/issues)
-- **邮箱：** your-email@example.com
+- **邮箱：** peresbreedanay7156@gmail.com
 
 ### 文档
 

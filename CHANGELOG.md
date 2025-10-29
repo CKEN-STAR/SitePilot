@@ -192,7 +192,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History
 
-- **v1.0.0** - 首次发布（2025-01-XX）
+- **v1.0.0** - 首次发布（2025-10-12）
 
 ---
 

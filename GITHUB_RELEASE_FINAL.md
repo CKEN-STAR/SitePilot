@@ -191,7 +191,7 @@ msiexec /i SitePilot_0.1.0_x64_en-US.msi /quiet
 如果您遇到任何问题或有功能建议，请：
 
 - 📝 [提交Issue](https://github.com/CKEN-STAR/SitePilot/issues)
-- 📧 发送邮件至：your-email@example.com
+- 📧 发送邮件至：peresbreedanay7156@gmail.com
 
 提交问题时，请提供：
 1. 操作系统版本

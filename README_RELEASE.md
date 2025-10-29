@@ -328,7 +328,7 @@ A: 卸载程序不会删除数据。数据存储在 `%APPDATA%\com.sitepilot.app
 如果您在使用过程中遇到任何问题，请通过以下方式反馈：
 
 - **GitHub Issues：** [提交问题](https://github.com/CKEN-STAR/SitePilot/issues)
-- **邮箱：** your-email@example.com
+- **邮箱：** peresbreedanay7156@gmail.com
 
 提交问题时，请提供：
 1. 操作系统版本
