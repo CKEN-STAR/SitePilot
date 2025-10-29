@@ -6,8 +6,8 @@ SitePilot 提供了3种不同的部署方式，满足不同场景的需求：
 
 ### 1. 绿色版（推荐）⭐
 
-**文件：** `SitePilot_v0.1.0_Portable.zip`  
-**大小：** 6.93 MB（压缩后）  
+**文件：** `SitePilot_v0.2.0_Portable.zip`
+**大小：** 约 7-10 MB（压缩后）
 **适用场景：** 便携部署、U盘使用、快速测试
 
 **特点：**
@@ -19,7 +19,7 @@ SitePilot 提供了3种不同的部署方式，满足不同场景的需求：
 
 **使用方法：**
 ```
-1. 解压 SitePilot_v0.1.0_Portable.zip 到任意位置
+1. 解压 SitePilot_v0.2.0_Portable.zip 到任意位置
 2. 双击 SitePilot.exe 启动程序
 3. 开始使用！
 ```
@@ -32,7 +32,7 @@ SitePilot 提供了3种不同的部署方式，满足不同场景的需求：
 
 ### 2. NSIS安装程序
 
-**文件：** `src-tauri\target\release\bundle\nsis\SitePilot_0.1.0_x64-setup.exe`  
+**文件：** `src-tauri\target\release\bundle\nsis\SitePilot_0.2.0_x64-setup.exe`
 **适用场景：** 标准安装、普通用户
 
 **特点：**
@@ -44,7 +44,7 @@ SitePilot 提供了3种不同的部署方式，满足不同场景的需求：
 
 **使用方法：**
 ```
-1. 双击 SitePilot_0.1.0_x64-setup.exe
+1. 双击 SitePilot_0.2.0_x64-setup.exe
 2. 按照安装向导完成安装
 3. 从开始菜单或桌面启动程序
 ```
@@ -57,7 +57,7 @@ SitePilot 提供了3种不同的部署方式，满足不同场景的需求：
 
 ### 3. MSI安装包
 
-**文件：** `src-tauri\target\release\bundle\msi\SitePilot_0.1.0_x64_en-US.msi`  
+**文件：** `src-tauri\target\release\bundle\msi\SitePilot_0.2.0_x64_en-US.msi`
 **适用场景：** 企业部署、系统管理员
 
 **特点：**
@@ -69,13 +69,13 @@ SitePilot 提供了3种不同的部署方式，满足不同场景的需求：
 **使用方法：**
 ```
 # 标准安装
-双击 SitePilot_0.1.0_x64_en-US.msi
+双击 SitePilot_0.2.0_x64_en-US.msi
 
 # 静默安装
-msiexec /i SitePilot_0.1.0_x64_en-US.msi /quiet
+msiexec /i SitePilot_0.2.0_x64_en-US.msi /quiet
 
 # 静默卸载
-msiexec /x SitePilot_0.1.0_x64_en-US.msi /quiet
+msiexec /x SitePilot_0.2.0_x64_en-US.msi /quiet
 ```
 
 ---
@@ -146,7 +146,7 @@ powershell -ExecutionPolicy Bypass -File create-portable.ps1
 
 ```bash
 # 使用 signtool 签名
-signtool sign /f certificate.pfx /p password /t http://timestamp.digicert.com SitePilot_0.1.0_x64-setup.exe
+signtool sign /f certificate.pfx /p password /t http://timestamp.digicert.com SitePilot_0.2.0_x64-setup.exe
 ```
 
 ---
@@ -173,32 +173,37 @@ signtool sign /f certificate.pfx /p password /t http://timestamp.digicert.com Si
 
 ```bash
 # 创建并推送标签
-git tag -a v0.1.0 -m "Release v0.1.0"
-git push origin v0.1.0
+git tag -a v0.2.0 -m "Release v0.2.0"
+git push origin v0.2.0
 ```
 
 ### 2. 上传文件
 
 在GitHub Release页面上传以下文件：
-- `SitePilot_v0.1.0_Portable.zip` （绿色版）
-- `SitePilot_0.1.0_x64-setup.exe` （NSIS安装程序）
-- `SitePilot_0.1.0_x64_en-US.msi` （MSI安装包）
+- `SitePilot_v0.2.0_Portable.zip` （绿色版）
+- `SitePilot_0.2.0_x64-setup.exe` （NSIS安装程序）
+- `SitePilot_0.2.0_x64_en-US.msi` （MSI安装包）
 
 ### 3. 发布说明模板
 
 ```markdown
-## SitePilot v0.1.0
+## SitePilot v0.2.0
 
 ### 下载
 
-- **绿色版（推荐）：** [SitePilot_v0.1.0_Portable.zip](链接) - 6.93 MB
-- **安装程序：** [SitePilot_0.1.0_x64-setup.exe](链接) - 20 MB
-- **MSI安装包：** [SitePilot_0.1.0_x64_en-US.msi](链接) - 20 MB
+- **绿色版（推荐）：** [SitePilot_v0.2.0_Portable.zip](链接) - 约 7-10 MB
+- **安装程序：** [SitePilot_0.2.0_x64-setup.exe](链接) - 44 MB
+- **MSI安装包：** [SitePilot_0.2.0_x64_en-US.msi](链接) - 95 MB
 
 ### 新功能
 
-- ✨ 4种布局模式（Cards、Carousel、Timeline、Hexagon）
-- 🎨 5种主题（Light、Dark、Blue、Purple、Green）
+- ✨ 9种布局模式（新增：Masonry、Grid、Cube、Magazine、Kanban）
+- 🎨 11种主题（新增：Sunset、Ocean、Forest、Cyberpunk、Minimalist、Custom）
+- 🌐 浏览器检测和选择功能
+- 🎨 自定义主题编辑器
+- ⏱️ 增强计时器（正计时/倒计时）
+- 📝 查看备注功能
+- 🎬 增强动画效果
 - ⏱️ 计时器功能（5种动画样式）
 - 💾 窗口状态记忆
 - 🏷️ 书签分类管理
