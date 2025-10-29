@@ -5,7 +5,76 @@ All notable changes to SitePilot will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2025-01-XX
+## [0.2.0] - 2025-01-29
+
+### Added
+
+#### 新增布局（5种）
+- Masonry（瀑布流布局）- Pinterest风格，动态高度
+- Grid（网格布局）- 紧凑型网格，适合大量书签
+- Cube（3D立方体布局）- 华丽的3D旋转效果
+- Magazine（杂志布局）- 非对称网格，杂志风格
+- Kanban（看板布局）- 横向滚动看板
+
+#### 新增主题（5种）
+- Sunset（日落主题）- 橙红渐变，温暖色调
+- Ocean（海洋主题）- 蓝绿渐变，清新色调
+- Forest（森林主题）- 深绿渐变，自然色调
+- Cyberpunk（赛博朋克主题）- 霓虹色彩，科技感
+- Minimalist（极简主题）- 黑白灰，极简风格
+
+#### 自定义主题编辑器
+- 可视化颜色选择器
+- 实时预览效果
+- 保存到localStorage
+- 支持自定义背景色、卡片背景、文字颜色、强调色
+
+#### 增强计时器功能
+- 正计时⏱️和倒计时⏲️模式切换
+- 重置按钮🔄
+- 保存计时器设置到localStorage
+
+#### 浏览器检测和选择
+- Windows注册表浏览器检测
+- 文件存在性检查（过滤已卸载的浏览器）
+- 添加/编辑书签时选择指定浏览器
+- 使用指定浏览器打开书签
+
+#### 查看备注功能
+- 隐藏卡片上的备注显示
+- 添加查看备注按钮（📝）
+- 点击按钮打开只读对话框
+- 支持复制备注内容
+
+#### 增强动画效果
+- 卡片进入动画（slideInUp）
+- 布局切换动画（crossFade）
+- 3D立方体旋转动画
+- 杂志布局滑入动画
+- 看板卡片下落动画
+- 支持`prefers-reduced-motion`无障碍功能
+
+### Changed
+- 统一卡片高度为200px，解决高度不一致问题
+- 窗口标题从"SitePilot - 网站书签管理器"改为"SitePilot"
+- 对话框支持滚动（maxHeight: 90vh）
+- 查看备注按钮位置优化（右侧中间）
+
+### Fixed
+- 修复卡片描述导致高度不一致的问题
+- 修复浏览器检测显示不存在的浏览器
+- 修复查看备注按钮点击事件冲突
+- 修复编辑对话框过长无法滚动的问题
+
+### Technical Details
+- 添加winreg依赖用于Windows注册表访问
+- 数据库添加`preferred_browser`字段
+- 新增浏览器检测Rust命令
+- 新增使用指定浏览器打开的Rust命令
+
+---
+
+## [0.1.0] - 2025-01-XX
 
 ### Added
 - 🎉 首次发布

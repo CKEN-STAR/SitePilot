@@ -16,7 +16,7 @@
 **SHA256:** `E8B6EBBDBC4F02E4EFEBE07F9E2FC099E347D8A7262C5649F3724C81AD9E471C`
 
 **使用方法：**
-```
+
 1. 下载并解压到任意位置
 2. 双击 SitePilot.exe
 3. 开始使用！

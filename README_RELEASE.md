@@ -8,7 +8,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg)](https://www.microsoft.com/windows)
-[![Version](https://img.shields.io/badge/Version-0.1.0-green.svg)](https://github.com/CKEN-STAR/SitePilot/releases)
+[![Version](https://img.shields.io/badge/Version-0.2.0-green.svg)](https://github.com/CKEN-STAR/SitePilot/releases)
 
 [下载](#-下载) • [功能特性](#-功能特性) • [使用指南](#-使用指南) • [常见问题](#-常见问题)
 
@@ -22,11 +22,13 @@ SitePilot 是一款专为 Windows 平台设计的桌面书签管理器，采用�
 
 ### 为什么选择 SitePilot？
 
-- 🎨 **华丽动画** - 4种独特的布局模式，每种都有精心设计的动画效果
+- 🎨 **华丽动画** - 9种独特的布局模式，每种都有精心设计的动画效果
+- 🌈 **丰富主题** - 11种主题（包括自定义主题），满足不同审美需求
 - 🎯 **简约设计** - 淡雅的配色方案，不会造成视觉疲劳
 - ⚡ **快速启动** - 基于 Tauri 框架，启动速度快，内存占用低
 - 💾 **本地存储** - 所有数据存储在本地，保护您的隐私
 - 🔄 **便携部署** - 提供绿色版，解压即用，无需安装
+- 🌐 **浏览器选择** - 为每个书签指定专属浏览器
 
 ---
 
@@ -51,59 +53,82 @@ SitePilot 是一款专为 Windows 平台设计的桌面书签管理器，采用�
 
 ### 界面系统
 
-#### 🎴 4种布局模式
+#### 🎴 9种布局模式
 
-**1. Cards（卡片布局）**
-- 经典的网格卡片布局
-- 独特的浮动气泡背景动画
-- 悬停时的旋转图案效果
+**原有布局：**
+1. **Cards（卡片）** - 经典网格布局，浮动气泡背景
+2. **Carousel（轮播）** - 横向滚动，波浪流动背景
+3. **Timeline（时间线）** - 垂直时间线，粒子漂浮背景
+4. **Hexagon（六边形）** - 六边形设计，网格脉冲背景
 
-**2. Carousel（轮播布局）**
-- 横向滚动的轮播展示
-- 波浪流动背景动画
-- 涟漪脉冲悬停效果
+**v0.2.0 新增布局：**
+5. **Masonry（瀑布流）** - Pinterest风格，动态高度
+6. **Grid（网格）** - 紧凑型网格，适合大量书签
+7. **Cube（3D立方体）** - 华丽的3D旋转效果
+8. **Magazine（杂志）** - 非对称网格，杂志风格
+9. **Kanban（看板）** - 横向滚动看板
 
-**3. Timeline（时间线布局）**
-- 垂直时间线展示
-- 粒子漂浮背景动画
-- 旋转光环悬停效果
+#### 🎨 11种主题
 
-**4. Hexagon（六边形布局）**
-- 独特的六边形卡片设计
-- 网格脉冲背景动画
-- 六边形呼吸悬停效果
+**原有主题：**
+- **Light（浅色）** - 清新明亮
+- **Dark（深色）** - 护眼舒适
+- **Blue（蓝色）** - 专业沉稳
+- **Purple（紫色）** - 优雅神秘
+- **Green（绿色）** - 自然清新
 
-#### 🎨 5种主题
+**v0.2.0 新增主题：**
+- **Sunset（日落）** - 橙红渐变，温暖色调
+- **Ocean（海洋）** - 蓝绿渐变，清新色调
+- **Forest（森林）** - 深绿渐变，自然色调
+- **Cyberpunk（赛博朋克）** - 霓虹色彩，科技感
+- **Minimalist（极简）** - 黑白灰，极简风格
 
-- **Light（浅色）** - 清新明亮的浅色主题
-- **Dark（深色）** - 护眼舒适的深色主题
-- **Blue（蓝色）** - 专业沉稳的蓝色主题
-- **Purple（紫色）** - 优雅神秘的紫色主题
-- **Green（绿色）** - 自然清新的绿色主题
+**自定义主题：**
+- **Custom（自定义）** - 使用主题编辑器创建专属主题
 
 ### 特色功能
 
-#### ⏱️ 计时器功能
-- 显示距离特定日期的天数
+#### ⏱️ 计时器功能（v0.2.0 增强）
+- **正计时模式** - 从今天开始计算已过天数
+- **倒计时模式** - 计算距离目标日期的剩余天数
+- **重置功能** - 一键重置计时器
 - 5种不同的动画样式：
   - Pulse（脉冲）
   - Rotate（旋转）
   - Wave（波浪）
   - Glow（发光）
   - Bounce（弹跳）
-- 自定义起始日期
+- 自定义起始/目标日期
+
+#### 🌐 浏览器选择（v0.2.0 新增）
+- **自动检测** - 检测系统已安装的浏览器
+- **智能过滤** - 过滤已卸载的浏览器
+- **指定浏览器** - 为每个书签指定专属浏览器
+- **支持浏览器** - Chrome、Edge、Firefox、Opera、Brave、Vivaldi等
+
+#### 🎨 自定义主题编辑器（v0.2.0 新增）
+- **可视化编辑** - 颜色选择器，实时预览
+- **自定义颜色** - 背景色、卡片背景、文字颜色、强调色
+- **自动保存** - 保存到本地，下次自动加载
+
+#### 📝 查看备注功能（v0.2.0 新增）
+- **简洁界面** - 隐藏卡片上的备注显示
+- **按需查看** - 点击📝按钮查看完整备注
+- **支持复制** - 可复制备注内容
 
 #### 💾 智能记忆
 - **窗口状态记忆** - 自动记住窗口大小和位置
 - **主题记忆** - 记住您选择的主题
 - **布局记忆** - 记住您喜欢的布局模式
 - **分类记忆** - 记住您创建的分类
+- **计时器记忆** - 记住计时器设置
 
 ---
 
 ## 📥 下载
 
-### 最新版本：v0.1.0
+### 最新版本：v0.2.0
 
 选择适合您的安装方式：
 
@@ -111,31 +136,31 @@ SitePilot 是一款专为 Windows 平台设计的桌面书签管理器，采用�
 
 **适合：** 便携使用、快速测试、不想安装的用户
 
-- **文件名：** `SitePilot_v0.1.0_Portable.zip`
-- **大小：** 6.93 MB
+- **文件名：** `SitePilot_v0.2.0_Portable.zip`
+- **大小：** 约 7-10 MB
 - **使用方法：** 解压到任意位置，双击 `SitePilot.exe` 即可运行
 
-[⬇️ 下载绿色版](https://github.com/CKEN-STAR/SitePilot/releases/download/v0.1.0/SitePilot_v0.1.0_Portable.zip)
+[⬇️ 下载绿色版](https://github.com/CKEN-STAR/SitePilot/releases/download/v0.2.0/SitePilot_v0.2.0_Portable.zip)
 
 #### 📦 安装程序
 
 **适合：** 需要开始菜单快捷方式的用户
 
-- **文件名：** `SitePilot_0.1.0_x64-setup.exe`
-- **大小：** ~20 MB
+- **文件名：** `SitePilot_0.2.0_x64-setup.exe`
+- **大小：** 44 MB
 - **使用方法：** 双击运行，按照向导完成安装
 
-[⬇️ 下载安装程序](https://github.com/CKEN-STAR/SitePilot/releases/download/v0.1.0/SitePilot_0.1.0_x64-setup.exe)
+[⬇️ 下载安装程序](https://github.com/CKEN-STAR/SitePilot/releases/download/v0.2.0/SitePilot_0.2.0_x64-setup.exe)
 
 #### 🏢 MSI安装包
 
 **适合：** 企业部署、IT管理员
 
-- **文件名：** `SitePilot_0.1.0_x64_en-US.msi`
-- **大小：** ~20 MB
+- **文件名：** `SitePilot_0.2.0_x64_en-US.msi`
+- **大小：** 95 MB
 - **使用方法：** 支持静默安装和批量部署
 
-[⬇️ 下载MSI安装包](https://github.com/CKEN-STAR/SitePilot/releases/download/v0.1.0/SitePilot_0.1.0_x64_en-US.msi)
+[⬇️ 下载MSI安装包](https://github.com/CKEN-STAR/SitePilot/releases/download/v0.2.0/SitePilot_0.2.0_x64_en-US.msi)
 
 ---
 
